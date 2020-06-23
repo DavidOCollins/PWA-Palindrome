@@ -9,7 +9,7 @@ const assets = [
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(staticDevCoffee).then(cache => {
+    caches.open(staticPalindrome).then(cache => {
       cache.addAll(assets)
     })
   )
